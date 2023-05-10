@@ -1,6 +1,3 @@
-import Navigo from 'navigo';
-import './public/assets/css/global.css';
-
 async function loadComponent(selector, path) {
     try {
         const response = await fetch(path);

@@ -1,18 +1,8 @@
 {
   "name": "ecofest",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^4.3.2"
-  },
-  "dependencies": {
-    "@rollup/plugin-alias": "^5.0.0",
-    "navigo": "^8.11.1"
-  }
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kivox/ecofest",
+  "author": "Petar Markov <50070761+kivox@users.noreply.github.com>",
+  "license": "MIT"
 }
