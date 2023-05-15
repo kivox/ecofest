@@ -327,10 +327,6 @@ p {
     font-size: 1.2rem;
     line-height: 1.5;
 }
-.tickets {
-    background-color: #f2e3db;
-    padding: 40px 0;
-}
 
 .container {
     max-width: 800px;
