@@ -29,21 +29,22 @@
 </script>
 
 <!-- Initiatives section -->
-<section class="m-auto h-full w-full">
-    <div class="py-16 m-auto max-w-screen-xl px-6">
-        <div class="text-center mb-8 pb-12">
+<section class="m-auto h-full w-full px-6">
+    <div class="pb-16 pt-10 m-auto max-w-screen-xl text-center px-6">
+        <div class="text-center my-8 pb-12">
             <h2 class="text-3xl font-semibold">Our Green Initiatives</h2>
             <p class="mx-auto max-w-lg">At Ecofest, we take our commitment to the environment seriously. Discover our
                 green initiatives making a difference.</p>
         </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
-            {#each initiatives as initiative}
-                <div class="flex flex-col items-center text-center">
-                    <img src={initiative.image} alt={initiative.title}
-                         class="w-full h-96 object-cover rounded-md mb-4"/>
-                    <h3 class="text-2xl font-semibold mb-2">{initiative.title}</h3>
-                    <p class="max-w-sm">{initiative.description}</p>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
+            {#each initiatives as init}
+                <div class="bg-white p-6 rounded-md shadow relative">
+                    <img src={init.image} alt={init.title} class="h-96 w-full object-cover rounded-md mb-6">
+                    <h3 class="font-semibold text-2xl mb-4 text-emerald-600">{init.title}</h3>
+                    <p class="max-w-md mx-auto">{init.description}</p>
+                    <!--<div class="flex justify-center items-center">
+                        <a href={act.link} class="bg-emerald-400 text-white px-6 py-2 rounded-md font-semibold hover:bg-emerald-500 transition">See More</a>
+                    </div>-->
                 </div>
             {/each}
         </div>

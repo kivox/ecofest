@@ -62,7 +62,7 @@
         },
         {
             title: "Solar Power",
-            description: "Solar panels are utilized to power all aspects of the festival, reducing reliance on fossil fuels.",
+            description: "Solar panels are utilised to power all aspects of the festival, reducing reliance on fossil fuels.",
             image: solar
         },
         {
@@ -100,9 +100,9 @@
 </script>
 
 <section class="m-auto h-full w-full max-w-screen-xl px-6">
-    <div class="pt-0 pb-16 lg:py-16 ">
+    <div class="p-0 lg:py-16">
         <div class="grid grid-cols-1 grid-rows-2 grid-flow-rows lg:grid-cols-2 lg:grid-flow-cols lg:grid-rows-1 w-full">
-            <div class="flex flex-col gap-2 max-w-2xl m-auto">
+            <div class="flex flex-col gap-2 max-w-2xl m-auto py-12">
                 <h1 class="text-3xl font-semibold">Welcome to <span class="text-emerald-400">ECOFEST</span></h1>
                 <p>
                     Unite your love for music and the environment at Ecofest! This family-friendly festival, on
@@ -151,9 +151,9 @@
 
 <section class="m-auto bg-emerald-50 h-full w-full">
     <div class="py-16 m-auto max-w-screen-xl px-6">
-        <div class="text-center">
-            <h2 class="text-3xl font-semibold mb-8">Our Acts</h2>
-            <p class="mb-16">Meet the incredible, eco-conscious acts set to light up the stage at <span
+        <div class="text-center my-8 pb-16">
+            <h2 class="text-3xl font-semibold mb-2">Our Performers</h2>
+            <p class="mx-auto">Meet the incredible, eco-conscious acts set to light up the stage at <span
                     class="font-semibold text-emerald-900">ECOFEST</span>.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
@@ -189,9 +189,9 @@
 <!-- Initiatives section -->
 <section class="m-auto bg-emerald-50 h-full w-full">
     <div class="py-16 m-auto max-w-screen-xl px-6">
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-semibold">Our Green Initiatives</h2>
-            <p class="mx-auto max-w-lg">At Ecofest, we take our commitment to the environment seriously. Discover our
+        <div class="text-center my-8 pb-16">
+            <h2 class="text-3xl font-semibold mb-2">Our Green Initiatives</h2>
+            <p class="mx-auto">At Ecofest, we take our commitment to the environment seriously. Discover our
                 green initiatives making a difference.</p>
         </div>
 

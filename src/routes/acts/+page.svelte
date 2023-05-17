@@ -1,32 +1,52 @@
 <script>
+        import everyonesEnvironment from '$lib/assets/acts/everyones-environment.jpg';
+        import solarDrum from '$lib/assets/acts/solar-drum.jpg';
+        import greenGizmos from '$lib/assets/acts/green-gizmos.jpg';
+        import dj from '$lib/assets/acts/dj-john-alfred.jpg';
+
     let acts = [
         {
-            name: "Act One",
-            description: "Description for Act One",
-            imageUrl: "https://placekitten.com/200/300",
-            link: "/acts/1"
+            id: 1,
+            name: "Everyone's Environment",
+            description: "Everyone's Environment is a rock band with a deep commitment to sustainability. Their music draws attention to environmental issues, and their performances are powered by renewable energy sources.",
+            image: everyonesEnvironment,
         },
         {
-            name: "Act Two",
-            description: "Description for Act Two",
-            imageUrl: "https://placekitten.com/200/300",
-            link: "/acts/"
+            id: 2,
+            name: "Solar Drum",
+            description: "Solar Drum is a that uses is a solo singer and music producer using instruments made from recycled materials. Her lively performances are a testament to the creative possibilities of reusing and repurposing.",
+            image: solarDrum,
         },
+        {
+            id: 3,
+            name: "Green Gizmos",
+            description: "Green Gizmos is an goofy music act that uses solar-powered synthesizers and other eco-friendly technology, the act is tailored mainly towards children. They prove that high-tech music doesn't have to come at the expense of the planet.",
+            image: greenGizmos
+        },
+        {
+            id: 4,
+            name: "DJ John Alfred",
+            description: "DJ John Alfred is a popular DJ known for his green initiatives. He's committed to using equipment that runs on renewable energy and promoting environmental awareness through his music.",
+            image: dj
+        }
     ];
 </script>
 
 <section class="m-auto h-full w-full px-6">
     <div class="pb-16 pt-10 m-auto max-w-screen-xl text-center px-6">
-        <h2 class="text-3xl font-semibold mb-9">Acts</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center my-8 pb-12">
+            <h2 class="text-3xl font-semibold">Performers</h2>
+            <p class="mx-auto max-w-lg">"Explore our diverse lineup of performers set to grace the ECOFEST stages. From established artists to emerging talents, get ready for a captivating musical experience!</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
             {#each acts as act}
                 <div class="bg-white p-6 rounded-md shadow relative">
-                    <img src={act.imageUrl} alt={act.name} class="h-64 w-full object-cover rounded-md mb-6">
+                    <img src={act.image} alt={act.name} class="h-96 w-full object-cover rounded-md mb-6">
                     <h3 class="font-semibold text-2xl mb-4 text-emerald-600">{act.name}</h3>
-                    <p class="mb-8 max-w-xs mx-auto">{act.description}</p>
-                    <div class="flex justify-center items-center">
+                    <p class="max-w-md mx-auto">{act.description}</p>
+                    <!--<div class="flex justify-center items-center">
                         <a href={act.link} class="bg-emerald-400 text-white px-6 py-2 rounded-md font-semibold hover:bg-emerald-500 transition">See More</a>
-                    </div>
+                    </div>-->
                 </div>
             {/each}
         </div>
