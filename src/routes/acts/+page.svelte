@@ -32,13 +32,17 @@
     ];
 </script>
 
+<svelte:head>
+    <title>ECOFEST - Acts</title>
+</svelte:head>
+
 <section class="m-auto h-full w-full px-6">
     <div class="pb-16 pt-10 m-auto max-w-screen-xl text-center px-6">
         <div class="text-center my-8 pb-12">
             <h2 class="text-3xl font-semibold">Performers</h2>
-            <p class="mx-auto max-w-lg">"Explore our diverse lineup of performers set to grace the ECOFEST stages. From established artists to emerging talents, get ready for a captivating musical experience!</p>
+            <p class="mx-auto">Explore our diverse lineup of performers set to grace the ECOFEST stages.<br/>From established artists to emerging talents, get ready for a captivating musical experience!</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             {#each acts as act}
                 <div class="bg-white p-6 rounded-md shadow relative">
                     <img src={act.image} alt={act.name} class="h-96 w-full object-cover rounded-md mb-6">
@@ -51,4 +55,12 @@
             {/each}
         </div>
     </div>
+</section>
+
+<!-- Call to action section -->
+<section class="py-16 bg-emerald-400 text-white text-center">
+    <h2 class="text-3xl font-semibold mb-4">Join the Fun at Ecofest</h2>
+    <p class="mx-auto max-w-lg mb-8">Experience incredible music, engage in eco-friendly initiatives, and have an
+        unforgettable day of rhythm, fun, and green living.</p>
+    <a href="/tickets" class="px-8 py-3 bg-white text-emerald-900 font-semibold rounded-md hover:bg-emerald-100 transition">Buy Tickets Now</a>
 </section>

@@ -82,22 +82,24 @@
             type: "Standing Ticket",
             description: "Experience the energy of ECOFEST with a standing ticket.",
             price: 35,
-            link: "/tickets?ticket=standing"
         },
         {
             type: "Seated Ticket",
             description: "Enjoy ECOFEST comfortably with a seated ticket.",
             price: 50,
-            link: "/tickets?ticket=seated"
         },
         {
             type: "VIP Ticket",
             description: "Experience ECOFEST in luxury with a VIP ticket. Limited availability.",
             price: 100,
-            link: "/tickets?ticket=vip"
         }
     ];
 </script>
+
+
+<svelte:head>
+    <title>ECOFEST - Welcome to ECOFEST!</title>
+</svelte:head>
 
 <section class="m-auto h-full w-full max-w-screen-xl px-6">
     <div class="p-0 lg:py-16">
@@ -178,7 +180,7 @@
                     <h3 class="font-semibold text-2xl mb-4 text-emerald-600">{ticket.type}</h3>
                     <p class="mb-8 max-w-xs mx-auto">{ticket.description}</p>
                     <div class="flex justify-center items-center">
-                        <a href={ticket.link} class="bg-emerald-400 text-white px-6 py-2 rounded-md font-semibold hover:bg-emerald-500 transition">Book Now</a>
+                        <a href={"/tickets"} class="bg-emerald-400 text-white px-6 py-2 rounded-md font-semibold hover:bg-emerald-500 transition">Book Now</a>
                     </div>
                 </div>
             {/each}

@@ -34,6 +34,10 @@
 
     let links = [
         {
+            name: "Home",
+            url: "/"
+        },
+        {
             name: "Acts",
             url: "/acts"
         },
@@ -58,7 +62,7 @@
     </div>
 {/if}
 
-<div class="w-full h-16 z-10 sticky top-0 shadow transition-all duration-300 {$navClass ? 'bg-opacity-75 backdrop-blur bg-emerald-50' : 'bg-emerald-50'}">
+<div class="w-full h-16 z-20 sticky top-0 shadow transition-all duration-300 {$navClass ? 'bg-opacity-75 backdrop-blur bg-emerald-50' : 'bg-emerald-50'}">
     <div class="max-w-screen-xl w-full flex flex-row h-full justify-center items-center m-auto pr-6">
         <!--Logo-->
         <a class="flex flex-row gap-2 justify-center items-center px-4" href="/">

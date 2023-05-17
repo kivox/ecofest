@@ -1,9 +1,15 @@
+<svelte:head>
+    <title>ECOFEST - Contact</title>
+</svelte:head>
+
 <!-- Contact Page -->
 <section class="m-auto h-full w-full">
-    <div class="py-16 m-auto max-w-screen-xl text-center px-6">
-        <h2 class="text-3xl font-semibold mb-9">Contact Us</h2>
-
-        <form class="w-full max-w-lg m-auto">
+    <div class="m-auto max-w-screen-xl text-center px-6 py-16">
+        <div class="text-center pb-12">
+            <h2 class="text-3xl font-semibold">Contact Us</h2>
+            <p class="mx-auto">Get in touch with us!</p>
+        </div>
+        <form  class="mx-auto max-w-2xl bg-white p-10 rounded shadow-md">
             <div class="flex flex-wrap mb-6">
                 <label for="name" class="block text-gray-700 text-sm font-bold mb-2">
                     Name:

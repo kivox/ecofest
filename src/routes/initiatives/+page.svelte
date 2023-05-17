@@ -28,6 +28,11 @@
     ];
 </script>
 
+
+<svelte:head>
+    <title>ECOFEST - Initiatives</title>
+</svelte:head>
+
 <!-- Initiatives section -->
 <section class="m-auto h-full w-full px-6">
     <div class="pb-16 pt-10 m-auto max-w-screen-xl text-center px-6">
@@ -36,7 +41,7 @@
             <p class="mx-auto max-w-lg">At Ecofest, we take our commitment to the environment seriously. Discover our
                 green initiatives making a difference.</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             {#each initiatives as init}
                 <div class="bg-white p-6 rounded-md shadow relative">
                     <img src={init.image} alt={init.title} class="h-96 w-full object-cover rounded-md mb-6">
