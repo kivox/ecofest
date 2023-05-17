@@ -1,8 +1,37 @@
 {
-  "name": "ecofest",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/kivox/ecofest",
-  "author": "Petar Markov <50070761+kivox@users.noreply.github.com>",
-  "license": "MIT"
+	"name": "ecofest",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.5.0",
+		"autoprefixer": "^10.4.14",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte": "^2.26.0",
+		"postcss": "^8.4.23",
+		"prettier": "^2.8.8",
+		"prettier-plugin-svelte": "^2.8.1",
+		"prettier-plugin-tailwindcss": "^0.3.0",
+		"svelte": "^3.54.0",
+		"tailwindcss": "^3.3.2",
+		"vite": "^4.3.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@iconify/svelte": "^3.1.3",
+		"@rgossiaux/svelte-headlessui": "^1.0.2",
+		"@sveltejs/adapter-vercel": "^2.4.3",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/forms": "^0.5.3",
+		"@tailwindcss/typography": "^0.5.9",
+		"svelte-carousel": "^1.0.25"
+	}
 }
