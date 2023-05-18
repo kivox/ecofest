@@ -34,7 +34,7 @@
 </svelte:head>
 
 <!-- Initiatives section -->
-<section class="m-auto h-full w-full px-6">
+<section class="m-auto h-full w-full">
     <div class="pb-16 pt-10 m-auto max-w-screen-xl text-center px-6">
         <div class="text-center my-8 pb-12">
             <h2 class="text-3xl font-semibold">Our Green Initiatives</h2>
